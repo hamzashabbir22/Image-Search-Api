@@ -55,7 +55,9 @@ async function searchImages(inputText){
 
 button.addEventListener('click',(e)=>{
    e.preventDefault()
-   searchResults.innerHTML ='';
+   if(page === 1){
+       searchResults.innerHTML ='';
+   }
    searchImages()
 })
 
